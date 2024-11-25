@@ -1,0 +1,45 @@
+<!--Event Booking Website-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking</title>
+    <link rel="stylesheet" href="projc.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to EventHub</h1>    
+        <p>Book your spot for the best events in town!</p> 
+    </header>
+
+    <section class="booking-form">
+        <h2>Book Your Event</h2>
+        <form action="confir.html" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="event">Select Event:</label>
+            <select id="event" name="event" required>
+                <option value="">--Choose an Event--</option>
+                <option value="concert">Live Concert</option>
+                <option value="workshop">Photography Workshop</option>
+                <option value="seminar">Business Seminar</option>
+                <option value="comedy">Comedy Show</option>
+            </select>
+
+            <label for="tickets">Number of Tickets:</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+</body>
+</html>
